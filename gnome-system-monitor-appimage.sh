@@ -17,7 +17,7 @@ export STARTUPWMCLASS=gnome-system-monitor # For Wayland, this is 'org.gnome.Sys
 # Trace and deploy all files and directories needed for the application (including binaries, libraries and others)
 wget --retry-connrefused --tries=30 "$SHARUN" -O ./quick-sharun
 chmod +x ./quick-sharun
-./quick-sharun /usr/bin/gnome-system-monitor
+./quick-sharun /usr/bin/gnome-system-monitor /usr/lib/gnome-system-monitor/*
 
 ## Copy help files for Help section to work
 langs=$(find /usr/share/help/*/gnome-system-monitor/ -type f | awk -F'/' '{print $5}' | sort | uniq)
