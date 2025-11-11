@@ -19,6 +19,10 @@ wget --retry-connrefused --tries=30 "$SHARUN" -O ./quick-sharun
 chmod +x ./quick-sharun
 ./quick-sharun /usr/bin/gnome-system-monitor /usr/lib/gnome-system-monitor/*
 
+## Add missing Processes and Resources icon
+cp -v /usr/share/icons/hicolor/symbolic/apps/processes-symbolic.svg ./AppDir/share/icons/hicolor/symbolic/apps/processes-symbolic.svg
+cp -v /usr/share/icons/hicolor/symbolic/apps/resources-symbolic.svg ./AppDir/share/icons/hicolor/symbolic/apps/resources-symbolic.svg
+
 ## Copy help files for Help section to work
 langs=$(find /usr/share/help/*/gnome-system-monitor/ -type f | awk -F'/' '{print $5}' | sort | uniq)
 for lang in $langs; do
