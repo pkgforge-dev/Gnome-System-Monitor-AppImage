@@ -1,7 +1,7 @@
 # Gnome-System-Monitor-AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Gnome-System-Monitor-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Gnome-System-Monitor-AppImage/releases/latest)
-[![CI Build Status](https://github.com//pkgforge-dev/Gnome-System-Monitor-AppImage/actions/workflows/blank.yml/badge.svg)](https://github.com/pkgforge-dev/Gnome-System-Monitor-AppImage/releases/latest)
+[![CI Build Status](https://github.com//pkgforge-dev/Gnome-System-Monitor-AppImage/actions/workflows/appimage.yml/badge.svg)](https://github.com/pkgforge-dev/Gnome-System-Monitor-AppImage/releases/latest)
 
 <p align="center">
   <img src="https://gitlab.gnome.org/GNOME/gnome-system-monitor/-/raw/main/data/icons/public/hicolor/scalable/apps/org.gnome.SystemMonitor.svg?ref_type=heads" width="128" />
