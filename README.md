@@ -39,3 +39,4 @@ More at: [AnyLinux-AppImages](https://pkgforge-dev.github.io/Anylinux-AppImages/
 
 - Help page only works if `gnome-help` or other similar `.page` viewer is installed on the host's system.  
 Bundling the help page viewer in the AppImage would make it work everywhere, but it's both bad for the file size and [security](https://blogs.gnome.org/mcatanzaro/2025/04/15/dangerous-arbitrary-file-read-vulnerability-in-yelp-cve-2025-3155/), hence why we don't do that.
+  - `gnome-help` v49.0 doesn't work with Help section of our GTK AppImages for some reason, while older versions, like v42.3 work.
