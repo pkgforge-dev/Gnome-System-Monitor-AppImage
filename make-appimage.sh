@@ -15,18 +15,12 @@ export STARTUPWMCLASS=gnome-system-monitor # For Wayland, this is 'org.gnome.Sys
 
 # Trace and deploy all files and directories needed for the application (including binaries, libraries and others)
 quick-sharun /usr/bin/gnome-system-monitor \
-             /usr/lib/gnome-system-monitor/*
+             /usr/lib/gnome-system-monitor/* \
+             /usr/share/help/*/gnome-system-monitor
 
 ## Add missing Processes and Resources icon
 cp -v /usr/share/icons/hicolor/symbolic/apps/processes-symbolic.svg ./AppDir/share/icons/hicolor/symbolic/apps/processes-symbolic.svg
 cp -v /usr/share/icons/hicolor/symbolic/apps/resources-symbolic.svg ./AppDir/share/icons/hicolor/symbolic/apps/resources-symbolic.svg
-
-## Copy help files for Help section to work
-langs=$(find /usr/share/help/*/gnome-system-monitor/ -type f | awk -F'/' '{print $5}' | sort | uniq)
-for lang in $langs; do
-  mkdir -p ./AppDir/share/help/$lang/gnome-system-monitor/
-  cp -vr /usr/share/help/$lang/gnome-system-monitor/* ./AppDir/share/help/$lang/gnome-system-monitor/
-done
 
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
