@@ -1,3 +1,5 @@
+<div align="center">
+
 # Gnome System Monitor AppImage 🐧
 
 [![GitHub Downloads](https://img.shields.io/github/downloads/pkgforge-dev/Gnome-System-Monitor-AppImage/total?logo=github&label=GitHub%20Downloads)](https://github.com/pkgforge-dev/Gnome-System-Monitor-AppImage/releases/latest)
@@ -8,7 +10,11 @@
   <img src="https://gitlab.gnome.org/GNOME/gnome-system-monitor/-/raw/main/data/icons/public/hicolor/scalable/apps/org.gnome.SystemMonitor.svg?ref_type=heads"" width="128" />
 </p>
 
-* [Upstream URL](https://gitlab.gnome.org/GNOME/gnome-system-monitor)
+| Latest Stable Release | Upstream URL |
+| :---: | :---: |
+| [Click here](https://github.com/pkgforge-dev/Gnome-System-Monitor-AppImage/releases/latest) | [Click here](https://gitlab.gnome.org/GNOME/gnome-system-monitor) |
+
+</div>
 
 ---
 
